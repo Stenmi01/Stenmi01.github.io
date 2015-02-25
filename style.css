@@ -10,6 +10,7 @@ Body
  tr{background-color:#CCCCFF;}
  td {border-width:4px;
      text-align:center;
+     text-style:bold;
  }
  th{font:25;
     font-style:bold;}
