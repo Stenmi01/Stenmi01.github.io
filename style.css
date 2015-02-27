@@ -11,7 +11,7 @@ Body
  }
 
 
- td {border:3px;
+ td {border:3px solid black;
      text-align:center;
  }
  th{font:25;
