@@ -9,7 +9,7 @@ Body
      margin:0px;
      padding: 0px;
  }
- 
+ .marg{margin-right:5px;}
  tr{background-color:#FF3333;}
  td {border-width:1px;
      text-align:center;
