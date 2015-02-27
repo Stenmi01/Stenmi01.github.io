@@ -16,7 +16,7 @@ Body
  }
  th{font:25;
     font-style:bold;
-     border:3px;
+     border:3px solid black;
  }
  .blue{background-color:#85ADFF;}
  .red{background-color:#FF5050;}
