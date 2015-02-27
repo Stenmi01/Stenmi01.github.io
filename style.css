@@ -9,8 +9,8 @@ Body
      margin:0px;
      padding: 0px;
  }
- .marg{margin-right:5px;}
- tr{background-color:#FF3333;}
+
+ tr{background-color:#99FF66;}
  td {border-width:1px;
      text-align:center;
  }
@@ -22,4 +22,4 @@ Body
 .green{background-color:#99FF66;}
 .darkgreen{background-color:#55ff22;}
 
-.sticky{position:fixed;}
+.sticky{position:fixed;margin-right:5px;}
