@@ -15,7 +15,9 @@ Body
      text-align:center;
  }
  th{font:25;
-    font-style:bold;}
+    font-style:bold;
+     border:3px;
+ }
  .blue{background-color:#85ADFF;}
  .red{background-color:#FF5050;}
 .blank{border-style:none;}
