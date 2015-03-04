@@ -54,8 +54,8 @@ header {
           #a{top:200px;
             left:200px;}
     
- h1 {width:75%;
-      text-shadow: 4px 2px #0066ff;}
+ h1 {margin-top:0px;}
+      
       
  table {border-width:4px;
      background-color:#CCCCee;
