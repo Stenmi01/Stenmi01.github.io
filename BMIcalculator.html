@@ -8,7 +8,7 @@
   <label for "weight">Enter Weight (lbs)</label>
   
   <input id="weight" type="text">
-  <button onclick="calculate();"> </button>
+  <button onclick="calculate();">Calculate BMI</button>
   <h1 id="BMI"></h1>
   
   <script>
@@ -20,7 +20,7 @@
     
     
     BMI = document.querySelector("BMI");
-    BMI.innerHTML = (703 / weight) / (height * height);
+    BMI.innerHTML = weight
   
   
   
