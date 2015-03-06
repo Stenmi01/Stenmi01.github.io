@@ -3,24 +3,32 @@
   <title>BMI Calculator</title>
   </head>
   <body>
+  
   <label for "height">Enter Height (inches)</label>
   <input id="height" type="text">
-  <label for "weight">Enter Weight (lbs)</label>
   
+  <label for "feet">height (feet)</label>
+  <input id="feet" type="text">
+  
+  <label for "weight">Enter Weight (lbs)</label>
   <input id="weight" type="text">
+  
   <button onclick="calculate();">Calculate BMI</button>
+  
   <h1 id="BMI"></h1>
   
   <script>
   calculate = function(){
     weightbox = document.querySelector("#weight");
     heightbox = document.querySelector("#height");
+    feetbox = document.querySelector("#feet");
     height = heightbox.value;
     weight = weightbox.value;
+    feet = feetbox.value;
     
     
     BMI = document.querySelector("#BMI");
-    BMI.innerHTML = (weight * 703) / (height * height);}
+    BMI.innerHTML = (weight * 703) / ((height + (feet * 12)) * (height + (feet * 12));}
   
   
   
