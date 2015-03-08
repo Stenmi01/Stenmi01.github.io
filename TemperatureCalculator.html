@@ -1,1 +1,25 @@
+
 <html>
+     <head>
+            
+    </head>
+     <body>
+          
+         <label for="thebox">Enter Farenheit</label>
+         <input id="thebox" type="text"> 
+         <button onclick="hallo();">Convert to Celcius</button>
+        <h1 id="output"></h1>
+            <script>
+                hallo=function(){
+                thebox = document.querySelector("#thebox");
+                far = thebox.value;
+                    
+                theh1 = document.querySelector("#output")
+                theh1.innerHTML = (far - 32)  * (5 / 9)
+                }
+         
+         </script>
+    </body>
+    
+    
+ </html>
