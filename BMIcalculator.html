@@ -28,7 +28,9 @@
     
     
     BMI = document.querySelector("#BMI");
-    BMI.innerHTML = (weight * 703) / (Math.pow(2, (height + (feet * 12))));}
+    BMI.innerHTML = (weight * 703) / [(height + (feet * 12)) * (height + (feet * 12))];
+    
+  }
     
     
   
