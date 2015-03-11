@@ -31,16 +31,17 @@
                  fh1.innerHTML= "Degrees Farenheit: " + f;
                  
                  
-                 if (f>90)
+                 if (f>90){
                     message = document.querySelector("#message");
-                    message.innerHTML="TOO Hot";
+                    message.innerHTML="TOO Hot";}
                
-                if (f<32)
+                if (f<32){
                     message = document.querySelector("#message");
-                    message.innerHTML="OOF Da!";
-                 if(f>=35 && f<=90)
+                    message.innerHTML="OOF Da!";}
+                
+                 if(f>=35 && f<=90){
                     message= document.querySelector("#message");
-                    message.innerHTML="Good Temp";
+                    message.innerHTML="Good Temp";}
                  
              }
              on.window = calculate;
