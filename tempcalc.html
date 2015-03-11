@@ -4,23 +4,29 @@
             
     </head>
      <body>
-          
-         <label for="thebox">Enter Farenheit</label>
-         <input onmousemove="hallo() id="thebox" type="range" min=-50 max=212 value=32> 
-         <button onclick="hallo();">Convert to Celcius</button>
-        <h1 id="output">Celcius: 0</h1>
-        <h1 id="outputf">Farenheit: 32</h1>
-            <script>
-                hallo=function(){
-                thebox = document.querySelector("#thebox");
-                far = thebox.value;
-                    
-                theh1 = document.querySelector("#output");
-                theh1.innerHTML = "Celcius:" + (far - 32)  * (5 / 9);
+          <label for="slider">Degrees Celcius</label>
+        <input id="slider" type="range" min=-55 max=100 id="slider" value=0 onmousemove="calculate()">
+        
+        <h1 id="degreesc">Degrees Celcius: 0</h1>
+        <h1 id="degreesf">Degrees Celcius: 32</h1>
                 
-               otherh1 = document.querySelector("#outputf");
-               otherh1.innerHTML = far;
-                }
+         <script>
+             
+             degreesc = document.queryselector
+             calculate=function() {
+              theslider=document.querySelector("#slider");
+                 c=theslider.value;
+                 f=c*1.8 + 32;
+                 
+                 ch1=document.querySelector("#degreesc");
+                 fh1=document.querySelector("#degreesf");
+                 
+                 ch1.innerHTML=c;
+                 fh1.innerHTML=f;
+                 
+             }
+             
+        
          
          </script>
     </body>
