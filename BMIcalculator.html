@@ -6,9 +6,7 @@
   
   <label for "height">Enter Height (inches) BROKEN </label>
   <input id="height" type="text">
-  
-  <label for "feet">height (feet)</label>
-  <input id="feet" type="text">
+
   
   <label for "weight">Enter Weight (lbs)</label>
   <input id="weight" type="text">
@@ -21,14 +19,14 @@
   calculate = function(){
     weightbox = document.querySelector("#weight");
     heightbox = document.querySelector("#height");
-    feetbox = document.querySelector("#feet");
+
     height = heightbox.value;
     weight = weightbox.value;
-    feet = feetbox.value;
+
     
     
     BMI = document.querySelector("#BMI");
-    BMI.innerHTML = (weight * 703) / [(height + (feet*12))*(height + (feet*12))];
+    BMI.innerHTML = (weight * 703) / (height * Height)
     
   }
     
