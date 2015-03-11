@@ -7,7 +7,7 @@
           
          <label for="thebox">Enter Farenheit</label>
          <input id="thebox" type="range" min=-50 max=212 value=32> 
-         <button onclick="hallo();">Convert to Celcius</button>
+         <button onmousemove="hallo();">Convert to Celcius</button>
         <h1 id="output">Celcius: 0</h1>
         <h1 id="outputf">Farenheit: 32</h1>
             <script>
@@ -19,7 +19,7 @@
                 theh1.innerHTML = "Celcius:" + (far - 32)  * (5 / 9)
                 
                otherh1 = document.querySelector("outputf")
-               otherh1.innerHTML = "Farenheit: " + far
+               otherh1.innerHTML = "Farenheit: " +far
                 }
          
          </script>
