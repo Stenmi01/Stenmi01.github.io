@@ -24,7 +24,7 @@
   <h1 id="BMI">BMI</h1>
   
   <script>
-  window.onload = calculate;
+  
   calculate = function(){
     weightbox = document.querySelector("#weight");
     heightbox = document.querySelector("#height");
@@ -42,7 +42,7 @@
     BMI.innerHTML = "BMI: " + (weight * 703) / (height * height);
     
   }
-    
+    window.onload = calculate;
     
   
   
