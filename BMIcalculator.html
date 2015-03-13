@@ -22,6 +22,7 @@
   <h1 id="labelh">Height(inches):</h1>
   <h1 id= "labelw">Weight(lbs):</h1>
   <h1 id="BMI">BMI</h1>
+  <h1 id="message"></h1>
   
   <script>
   
@@ -40,6 +41,24 @@
    
     BMI = document.querySelector("#BMI");
     BMI.innerHTML = "BMI: " + (weight * 703) / (height * height);
+    
+     if (BMI>24.9){
+                    message = document.querySelector("#message");
+                    message.innerHTML="Hit the Gym!";
+                    document.body.style.backgroundColor="Red";
+                 }
+               
+                if (f<18.5){
+                    message = document.querySelector("#message");
+                    message.innerHTML="OOF Da!";
+                     document.body.style.backgroundColor="green";
+                }
+                
+                 if(f>=18.5 && f<=24.5){
+                    message= document.querySelector("#message");
+                    message.innerHTML="Looking Good!";
+                    document.body.style.backgroundColor="blue";
+                 }
     
   }
     window.onload = calculate;
