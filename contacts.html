@@ -1,4 +1,6 @@
 <html>
+<head>
+    <html>
   <head>
   </head>
   
@@ -15,15 +17,26 @@
 
       <table id="table" width='100%' border=1px cellspacing=0>
     <caption>Contacts</caption>
-<tr>
+<tr id="row">
      <th>First Name</th>
      <th>Last Name</th>
      <th>Phone Number</th>
- </tr>
+</tr>
   
   <script>
     
     add = function();{
+      nameinput = document.querySelector("#nameinput");
+      lastinput = document.querySelector("#lastinput");
+      phoneinput = document.querySelector("#phoneinput");
+      
+      t = document.querySelector("#table")
+      trow = document.createElement("tr")
+      td = document.createElement("td")
+      contents = document.createTextNode("nameinput")
+      td.appendChild(contents)
+             trow.appendChild(td)
+             t.appendChild(trow)
       
     }
     
