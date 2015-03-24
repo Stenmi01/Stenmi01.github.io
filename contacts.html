@@ -33,10 +33,14 @@
       t = document.querySelector("#table")
       trow = document.createElement("tr")
       td = document.createElement("td")
+       td2 = document.createElement("td")
+        td3 = document.createElement("td")
       contents = document.createTextNode(nameinput)
       td.appendChild(contents)
-             trow.appendChild(td)
-             t.appendChild(trow)
+      td2.appendChild(contents)
+      td3.appendChild(contents)
+    trow.appendChild(td)
+     t.appendChild(trow)
       
     }
     
