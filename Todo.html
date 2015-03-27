@@ -19,7 +19,7 @@
     
 </head>    
 <body>
-     <label for="nameinput">What to do?</label>
+     <label for="nameinput">What to do</label>
     <input type="text"  size="40" id="nameinput">
     <select id="colorchooser">
             <option>Red</option>
@@ -35,10 +35,7 @@
         
         increment = function() {
             nameinput = document.querySelector("#nameinput").value;
-            
-             
-             
-             
+        
             output = document.querySelector("#out");
             newli = document.createElement("li");
             
@@ -46,7 +43,7 @@
             cb.type="checkbox";
            
             newli.appendChild(cb);
-            te = document.createTextNode(nameinput);
+            
             newli.appendChild(te);
             contents = document.createTextNode(nameinput);
             newli.appendChild(contents);
