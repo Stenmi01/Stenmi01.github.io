@@ -41,12 +41,24 @@
    
     BMI = document.querySelector("#BMI");
     BMI.innerHTML = "BMI: " + (weight * 703) / (height * height);
-    BMIV = BMI.value;
+    BM= (weight * 703) / (height * height);
     
-     if (BMIV>24.9){
+    
+     if (BM>24.9){
                     message= document.querySelector("#message");
                     message.innerHTML="Hit the Gym!";
                     
+                 }
+     if (BM<18.5){
+                    message= document.querySelector("#message");
+                    message.innerHTML="Eat some Ice Cream";
+                     document.body.style.backgroundColor="green";
+                }
+                
+    if(BM>=18.5 && BMIV<=24.5){
+                    message= document.querySelector("#message");
+                    message.innerHTML="Looking Good!";
+                    document.body.style.backgroundColor="blue";
                  }
                
    
